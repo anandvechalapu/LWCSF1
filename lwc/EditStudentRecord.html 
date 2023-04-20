@@ -1,0 +1,23 @@
+<!-- FILE: EditStudentRecord.html -->
+<template>
+  <lightning-card title="Edit Student Record">
+    <lightning-record-edit-form record-id={recordId} object-api-name="Student__c" onsuccess={handleSuccess}>
+      <lightning-messages>
+      </lightning-messages>
+      <lightning-input-field field-name="Name" >
+      </lightning-input-field>
+      <lightning-input-field field-name="Student_ID__c" >
+      </lightning-input-field>
+      <lightning-input-field field-name="Grade__c" >
+      </lightning-input-field>
+      <lightning-button
+        class="slds-m-top_small"
+        variant="brand"
+        type="submit"
+        name="update"
+        label="Update"
+      >
+      </lightning-button>
+    </lightning-record-edit-form>
+  </lightning-card>
+</template>
